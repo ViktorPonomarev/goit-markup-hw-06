@@ -881,6 +881,47 @@ img {
   fill: var(--main-bacground-color);
 }
 
+/* footer-form */
+.input-footer {
+  color: var(--main-bg-cl);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.footer-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-bg-cl);
+  background-color: var(--accent-color);
+  padding: 10px 28px;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
 /* Портфолио  */
 /* button portfolio */
 .features-section {
