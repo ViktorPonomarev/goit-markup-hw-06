@@ -399,12 +399,19 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form:focus .form-input-title {
-  outline: 0;
-  border-color: var(--accent-color);
+.form-input-title:hover+.form-icon,
+.form-input-title:focus+.form-icon {
+  color: var(--accent-color);
 }
 
-.form-input-title:hover {
+/* .contact-form:focus+.form-input-title {
+  outline: 0;
+  border-color: var(--accent-color);
+} */
+
+.form-input-title:hover,
+.form-input-title:focus {
+  outline: 0;
   border-color: var(--accent-color);
 }
 
@@ -418,9 +425,9 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form:focus .form-icon {
+/* .contact-form:focus .form-icon {
   fill: var(--accent-color);
-}
+} */
 
 .contact-form--margin_bottom {
   margin-bottom: 20px;
@@ -441,12 +448,13 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-label:focus .contact-form-comments {
+.contact-form-label:focus+.contact-form-comments {
   outline: 0;
   border-color: var(--accent-color);
 }
 
-.contact-form-comments:hover {
+.contact-form-comments:hover,
+.contact-form-comments:focus {
   border-color: var(--accent-color);
 }
 
@@ -456,14 +464,43 @@ img {
   margin-bottom: 30px;
 }
 
+/* .contact-form-inner-checkbox {
+  fill: var(--main-bacground-color);
+  cursor: pointer;
+  border: 2px solid var(--title-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+} */
+
 .contact-form-checkbox-container {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16px;
   height: 15px;
   margin-right: 8px;
   cursor: pointer;
+  fill: var(--main-bacground-color);
+
+  border: 2px solid var(--title-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
 }
+
+/* .checkbox:checked+.contact-form-inner-checkbox {
+  fill: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+} */
+
+/* .checkbox:focus+.contact-form-inner-checkbox {
+  border-color: var(--accent-color);
+}
+
+.checkbox:hover+.contact-form-inner-checkbox {
+  border-color: var(--accent-color);
+} */
 
 .contact-form-checkbox-label-link {
   color: var(--accent-color);
