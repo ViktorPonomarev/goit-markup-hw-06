@@ -416,6 +416,7 @@ img {
   position: absolute;
   top: 50%;
   left: 13px;
+  pointer-events: none;
   color: var(--title-text-color);
   fill: currentColor;
   transform: translateY(-50%);
